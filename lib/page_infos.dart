@@ -13,8 +13,13 @@ class PageInfos extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Bienvenu sur la page Infos !"),
+              ElevatedButton(onPressed: (){
+                Navigator.pop(context);
+              }, child: Text("Page precedente")),
             ],
+          
           ),
+          
         ),
       )
     );

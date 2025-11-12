@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_navigation/page_infos.dart';
 
 class PageAcceuil extends StatelessWidget {
   const PageAcceuil({super.key});
@@ -13,6 +14,10 @@ class PageAcceuil extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("Bienvenu sur la page d'acceuil"),
+              ElevatedButton(onPressed: (){
+                Navigator.push(context,
+                MaterialPageRoute(builder: (context) => PageInfos()));
+              }, child: Text("Allez a la page Infos")),
             ],
           ),
         ),

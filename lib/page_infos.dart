@@ -7,7 +7,7 @@ class PageInfos extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home : Scaffold(
-        appBar: AppBar(title: Text("PAge d'infos")),
+        appBar: AppBar(title: Text("Page d'infos")),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
